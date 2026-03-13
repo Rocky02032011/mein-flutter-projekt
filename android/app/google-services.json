@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "207067463949",
+    "project_id": "chaos-8bd2d",
+    "storage_bucket": "chaos-8bd2d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207067463949:android:eaa26b855da85f682d3044",
+        "android_client_info": {
+          "package_name": "com.example.gittest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7CGyjCSDJqK4eYDqckHkjTVhRiJecAaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
