@@ -3,14 +3,14 @@
     "platforms": {
       "android": {
         "default": {
-          "projectId": "chaos-8bd2d",
+          "projectId": "reaktionsspiel-71df4",
           "appId": "1:207067463949:android:eaa26b855da85f682d3044",
           "fileOutput": "android/app/google-services.json"
         }
       },
       "dart": {
         "lib/firebase_options.dart": {
-          "projectId": "chaos-8bd2d",
+          "projectId": "reaktionsspiel-71df4",
           "configurations": {
             "android": "1:207067463949:android:eaa26b855da85f682d3044",
             "ios": "1:207067463949:ios:b08807f18982e1832d3044",

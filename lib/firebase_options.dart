@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -21,13 +11,25 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for android - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,51 +43,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB6z5tZ9Vzh_8pFJbFtGLDDDwJWX6s5QB4',
-    appId: '1:207067463949:web:63f4b5d0dc9a68062d3044',
-    messagingSenderId: '207067463949',
-    projectId: 'chaos-8bd2d',
-    authDomain: 'chaos-8bd2d.firebaseapp.com',
-    databaseURL: 'https://chaos-8bd2d.firebaseio.com',
-    storageBucket: 'chaos-8bd2d.firebasestorage.app',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB7CGyjCSDJqK4eYDqckHkjTVhRiJecAaI',
-    appId: '1:207067463949:android:eaa26b855da85f682d3044',
-    messagingSenderId: '207067463949',
-    projectId: 'chaos-8bd2d',
-    databaseURL: 'https://chaos-8bd2d.firebaseio.com',
-    storageBucket: 'chaos-8bd2d.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCcH21qNMzBoXE9OktqmVpqTXQKwsjvD4A',
-    appId: '1:207067463949:ios:b08807f18982e1832d3044',
-    messagingSenderId: '207067463949',
-    projectId: 'chaos-8bd2d',
-    databaseURL: 'https://chaos-8bd2d.firebaseio.com',
-    storageBucket: 'chaos-8bd2d.firebasestorage.app',
-    iosBundleId: 'com.example.gittest',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCcH21qNMzBoXE9OktqmVpqTXQKwsjvD4A',
-    appId: '1:207067463949:ios:b08807f18982e1832d3044',
-    messagingSenderId: '207067463949',
-    projectId: 'chaos-8bd2d',
-    databaseURL: 'https://chaos-8bd2d.firebaseio.com',
-    storageBucket: 'chaos-8bd2d.firebasestorage.app',
-    iosBundleId: 'com.example.gittest',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyB6z5tZ9Vzh_8pFJbFtGLDDDwJWX6s5QB4',
-    appId: '1:207067463949:web:8008522cf2561a112d3044',
-    messagingSenderId: '207067463949',
-    projectId: 'chaos-8bd2d',
-    authDomain: 'chaos-8bd2d.firebaseapp.com',
-    databaseURL: 'https://chaos-8bd2d.firebaseio.com',
-    storageBucket: 'chaos-8bd2d.firebasestorage.app',
+    apiKey: 'AIzaSyDDM6OPJfmWBHGwRvR78vAWAPHq2L6H6VM',
+    appId: '1:744290146124:web:cf07952b5d4d1bb6f121e9',
+    messagingSenderId: '744290146124',
+    projectId: 'reaktionsspiel-71df4',
+    authDomain: 'reaktionsspiel-71df4.firebaseapp.com',
+    databaseURL:
+        'https://reaktionsspiel-71df4-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'reaktionsspiel-71df4.firebasestorage.app',
   );
 }
