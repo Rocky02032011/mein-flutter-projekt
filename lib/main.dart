@@ -43,7 +43,7 @@ class _ReactionAppState extends State<ReactionApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Reaktionsspiel v1',
+      title: 'Reaktionsspiel v2',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: FutureBuilder<void>(
         future: _initFuture,
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: const Text('Beitreten'),
             ),
-            Text("V2"),
+            Text("V3"),
           ],
         ),
       ),
