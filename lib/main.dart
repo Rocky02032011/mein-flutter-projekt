@@ -128,6 +128,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: const Text('Beitreten'),
             ),
+            Text("V2"),
           ],
         ),
       ),
