@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'game_page.dart';
+import 'package:gittest/game_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
         'rooms/$roomId/players/$name',
       );
 
-      // Prüfen ob Name bereits vergeben
+      // Pruefen ob Name bereits vergeben
       final snapshot = await playerRef.get();
       if (snapshot.exists) {
         setState(() {
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
         return;
       }
 
-      // Spieler dem Raum hinzufügen
+      // Spieler dem Raum hinzufuegen
       await playerRef.set({
         'name': name,
         'score': 0,
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
             builder: (context) => GamePage(playerName: name, roomId: roomId),
           ),
         ).then((_) {
-          // Spieler entfernen wenn zurück zur HomePage
+          // Spieler entfernen wenn zurueck zur HomePage
           playerRef.remove();
           setState(() => _isJoining = false);
         });
