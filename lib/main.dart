@@ -43,7 +43,7 @@ class _ReactionAppState extends State<ReactionApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Reaktionsspiel',
+      title: 'Reaktionsspiel v1',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: FutureBuilder<void>(
         future: _initFuture,
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Reaktionsspiel')),
+      appBar: AppBar(title: const Text('Reaktionsspiel v1')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
